@@ -6,15 +6,24 @@
     <title>test</title>
     <script type="module" src="js.js" defer></script>
     <link href='https://fonts.googleapis.com/css?family=Kavoon' rel='stylesheet'>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style copy.css">
 </head>
 <body>
-    <div class="mm">Quiz</div>
-    <div class="bb">
-        <label class="nn" for="fileInput">Open quiz file </label>
-        <label class="nn" for="fileInput">Select a file:</label>
-    </div>
     <input type="file" id="fileInput" accept=".WL" style="display: none;"/>
+    <div class="title-box">
+        <div class="title-text">Quiz</div>
+    </div>
+
+    <div class="box">
+        <div class="box-menu">
+            <label class="menu-button" for="fileInput">Open quiz file</label>
+            <label class="menu-button" for="fileInput">Crate quiz</label>
+        </div>
+        <div id="scrollbar-custom" class="box-quiz">
+            <div id="quiz-grid" class="quiz-grid">
+            </div>
+        </div>
+    </div>
     <div id="namnContainer"></div> <!-- Behållare för div-elementen -->
 </body>
 </html>
